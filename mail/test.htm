@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <style>
+		.box {
+			width: 800px;
+			height: 200px;
+			background: #555;
+			color: #000;
+			overflow: hidden;
+		}
+		
+		.mask1 {
+			mask: url(/skins/BlueSky/images/mask.png?%VERSION%);
+			
+			-webkit-mask: url(/skins/BlueSky/images/mask.png?%VERSION%) repeat-y top right;
+			-o-mask: url(/skins/BlueSky/images/mask.png?%VERSION%) repeat-y top right;
+			-ms-mask: url(/skins/BlueSky/images/mask.png%VERSION%) repeat-y top right;
+		}
+		.mask {
+			-webkit-mask: url(/skins/BlueSky/images/mask.png?%VERSION%) repeat-y top right;
+			mask: url(#masking);
+			mask-position: top right;
+			mask-size: 30px 100%;
+			
+			-ms-mask: url("/skins/BlueSky/images/mask.png");
+			-ms-mask-position: top right;
+			-ms-mask-size: 30px 100%;
+			
+			-o-mask: url("/skins/BlueSky/images/mask.svg#masking");
+			-o-mask-position: top right;
+			-o-mask-size: 30px 100%;
+		}
+		.wrap {
+			border: 1px solid red;
+			float: left;
+		}
+	</style>
+	
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+	
+    <h1>Hello, world!</h1>
+	<div class="svg_container" style="height: 0px; overflow: hidden;">
+		<svg>
+			<defs>
+				<linearGradient id="gradient" x1="80%" y1="0" x2 ="100%" y2="0">
+					<stop stop-color="white" offset="0"/>
+					<stop stop-color="black" offset="1"/>
+				</linearGradient>
+
+				<mask id="masking" maskUnits="objectBoundingBox" maskContentUnits="objectBoundingBox">
+					<rect width="1" height="1" fill="url(#gradient)" />
+				</mask>
+			</defs>
+		</svg>
+	</div>
+
+	<div class="wrap">
+		<img class="mask" src="/skins/Default/images/logo2x.png" />
+	</div>
+	<div class="wrap">
+		<div class="box mask">
+			<div>
+				wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
+				wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

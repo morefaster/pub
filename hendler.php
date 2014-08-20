@@ -3,11 +3,12 @@
     $phone=$_POST['phone'];
     $from=$_POST['from'];
     $message_form=$_POST['message'];
+    $ref    = (isset($_POST['refers'])) ? $_POST['refers'] : '';
  	
- 	$to = "head123455@yanex.ru";
+ 	$to = "inbox@rf-motors.ru";
     $subject = "Заявка!";
     if($message_form){
-    	$message = "<br>User: " . $name . "<br>Mail: " . $phone . "<br>Message:<br>" . $message_form . "<br>From: " . $from;
+    	$message = "<br>User: " . $name . "<br>Mail: " . $phone . "<br>Message:<br>" . $message_form . "<br>From: " . $from . "<br> $ref";
     }
     else $message = "<br>User: " . $name . "<br>Phone: " . $phone;
     
