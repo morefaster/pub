@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="content-language" content="ru">
+		<title></title>
+		<link href='css/style.css' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<script>
+		  //Маска телефонного номера
+		  jQuery(function($){
+			 $(".phoneI").mask("+9(999) 999-99-99",{placeholder:"_"});
+		  });
+
+	   </script>
+		<script>
+		</script>
+		<script>
+			$(document).ready(function() {
+			  $("#owl").owlCarousel({
+				items : 3,
+				itemsDesktop : [1199,3],
+				itemsDesktopSmall : [979,3],
+				addClassActive: true,
+				pagination: false,
+				navigation : true
+			  });
+			  $("#owl_1").owlCarousel({
+				items : 12,
+				itemsDesktop : [1366,12],
+				itemsDesktop : [1199,10],
+				itemsDesktopSmall : [979,5],
+				itemsDesktopSmall : [780,3],
+				itemsDesktopSmall : [480,1],
+				itemsDesktopSmall : [320,1],
+				addClassActive: true,
+				pagination: false,
+				navigation : true
+			  });
+			  $("#owl_2").owlCarousel({
+				items : 12,
+				itemsDesktop : [1366,12],
+				itemsDesktop : [1199,10],
+				itemsDesktopSmall : [979,5],
+				itemsDesktopSmall : [780,3],
+				itemsDesktopSmall : [480,1],
+				itemsDesktopSmall : [320,1],
+				addClassActive: true,
+				pagination: false,
+				navigation : true
+			  }); 
+			  
+			  $("#owl_4").owlCarousel({
+				items : 4,
+				itemsDesktop : [1366,4],
+				itemsDesktopSmall : [992,3],
+				itemsTabletSmall : [480,1],
+				itemsMobile : [340,1],
+				addClassActive: true,
+				pagination: false,
+				navigation : true
+			  });
+			  $("#owl_5").owlCarousel({
+				items : 4,
+				itemsDesktop : [1200,4],
+				itemsDesktopSmall : [992,3],
+				itemsTabletSmall : [480,2],
+				itemsMobile : [340,1],
+				addClassActive: true,
+				pagination: false,
+				navigation : true
+			  });
+			  $("#owl_6").owlCarousel({
+				items : 4,
+				itemsDesktop : [1200,4],
+				itemsDesktopSmall : [992,3],
+				itemsTabletSmall : [480,2],
+				itemsMobile : [340,1],
+				addClassActive: true,
+				pagination: false,
+				navigation : true
+			  });
+				$('').parallax("50%", 0.1);
+				/*$(".click").click(function () {
+				  $('.text').AddClass("toggle");
+				});*/
+				$(function() {                       //run when the DOM is ready
+				  $(".click").click(function() {  //use a class, since your ID gets mangled
+					$('.text').addClass("toggle");      //add the class to the clicked element
+				  });
+				  $(".form">button).click(function() {  //use a class, since your ID gets mangled
+					$('.text').removeClass("toggle");      //add the class to the clicked element
+				  });
+				});
+			});
+		</script>
+	</head>
+	<body class="mainpj">
+		<section class="block_1">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-8 col-lg-9 col-sm-9">
+						<div class="display_inline-block v_top">
+							<div class="logo">
+								<div class="inner">
+									<div class="vertical"></div>
+									<div class="horizontal h_1"></div>
+									<div class="horizontal h_2"></div>
+									<div class="horizontal h_2"></div>
+									<div class="horizontal h_1"></div>
+									<div class="horizontal h_2"></div>
+								</div>
+								<div class="triangle"></div>
+							</div>
+							<div class="logo_name">Моторс</div>
+						</div>
+						<div class="display_inline-block v_top fix">
+							<p class="title">СТАНЦИЯ ТЕХНИЧЕСКОГО ОБСЛУЖИВАНИЯ</p>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-4 col-lg-3 col-sm-3">
+						<div class="phone" data-toggle="modal" data-target="#call">
+							<i class="icon"></i><p>8 495 355-54-44</p>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-12 col-sm-12 vis">
+						<div class="switch"><i class="icon click"></i><p>Оставьте заявку</p></div>
+					</div>
+					<div class="col-xs-12 col-md-12 col-sm-12">
+						<div class="subTitle click">
+							<i class="icon"></i>
+							<div class="inner anim-el">
+								<p class="text"><span>Оставьте заявку</span> на прохождения диагностики прямо сейчас 
+                                    и получите<span> скидки 69% </span>  на замену масла!</p>
+								<form class="form display_table" action="hendler.php" method="POST">
+									<input type="text" name="user" placeholder="Ваше имя_" required />
+									<input type="text" name="phone" placeholder="Ваш телефон_" required />
+									<button type="submit" class="selfBtn"> Отправить</button>
+								</form>
+								
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-12 col-sm-12">
+						<div class="row">
+							<div class="col-xs-12 col-md-4 col-sm-4">
+								<div class="outset">
+									<div class="rectangle">
+										<p>100%</p>
+										<div class="triangle"></div>
+									</div>
+								</div>
+								<p class="description anim-el">Нужны запчасти? </br> </br>Приобретая их в нашем техцентре </br> вы получаете гарантию их</br>  полной совмесимости</p>
+							</div>
+							<div class="col-xs-12 col-md-4 col-sm-4">
+								<div class="outset">
+									<div class="rectangle">
+										<p>Y</p>
+										<div class="triangle"></div>
+									</div>
+								</div>
+								<p class="description anim-el">Живете рядом? </br> </br>  Специальные условия и программа</br>  скидок для наших постоянных </br>клиентов</p>
+							</div>
+							<div class="col-xs-12 col-md-4 col-sm-4">
+								<div class="outset">
+									<div class="rectangle">
+										<p>0 руб.</p>
+										<div class="triangle"></div>
+									</div>
+								</div>
+								<p class="description">Остаетесь на ремонт? </br>  </br> В благодарность за оказанное доверие мы оплатим </br> Вам такси до дома</p>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="gridder"></div>
+		</section>
+		<section class="block_2">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-8 col-sm-7">
+						<p class="title_1"><span>РФ</span>-МОТОРС</p>
+						<p class="title_2">легко найти</p>
+						<p class="title_3">  на  улице  -  <span>К а х о в к а</span></p>
+					</div>
+					<div class="col-xs-12 col-md-4 col-sm-5">
+						<div class="outset anim-el">
+							<div class="rectangle">
+							</div>
+						</div>
+						<p class="description">5 МИНУТ ОТ ПРОФСОЮЗНОЙ УЛ. И СЕВАСТОПОЛЬСКОГО ПР.</p>
+						<div class="clearfix"></div>
+						<p class="description fix">10 МИНУТ ОТ</br> ВАРШАВСКОГО Ш.</br> И ЛЕНЕНСКОГО ПР.</p>
+						<div class="outset anim-el pull-right">
+							<div class="rectangle">
+							</div>
+						</div>
+						<div class="clearfix"></div>
+						<div class="outset anim-el">
+							<div class="rectangle">
+							</div>
+						</div>
+						<p class="description">15 МИНУТ ОТ МКАД</br>И ТРЕТЬЕГО КОЛЬЦА</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="block_3" id="obs">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-4 col-sm-12 hid">
+						<div class="msg" data-toggle="modal" data-target="#call">
+							<i class="icon icon_1"></i><p class="anim-el">Оставьте заявку</p><i class="icon anim-el icon_2"></i>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-8 col-sm-12">
+						<p class="title">
+							Плановое ТО<br />
+Заправочные работы
+						</p>
+					</div>
+					<div class="col-xs-12 col-md-4 col-sm-12 vis">
+						<div class="msg" data-toggle="modal" data-target="#call">
+							<i class="icon icon_1"></i><p>Оставьте заявку</p><i class="icon icon_2"></i>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-12 col-sm-12">
+						<div class="holder hid">
+							<div class="clearfix">
+								<div class="item item_1 anim-el"><p>Замена масла в двигателе</br>  - 500 руб.</p></div>
+								<div class="item item_2 anim-el"><p>Замена тормозной жидкости</br>  - 600 руб.</p></div>
+								<div class="item item_3 anim-el"><p>Замена топливного фильтра</br>  - 500 руб.</p></div>
+								<div class="item item_4 anim-el"><p>Замена тормозных колодок</br>  — 500 руб.</p></div>
+								<div class="item item_5 anim-el"><p>Замена салонного фильтра</br>  - 500 руб.</p></div>
+								<div class="item item_6 anim-el"><p>Замена масла в раздаточной коробке от 600 руб.</p></div>
+							</div>
+						</div>
+						<div class="holder vis">
+							<div class="clearfix">
+								<div class="item item_1"><p>Замена масла в двигателе - 500 руб.</p></div>
+								<div class="item item_2"><p>Замена тормозной жидкости - 600 руб.</p></div>
+								<div class="item item_3"><p>Замена топливного фильтра - 500 руб.</p></div>
+								<div class="item item_4"><p>Замена тормозных колодок — 500 руб.</p></div>
+								<div class="item item_5"><p>Замена салонного фильтра - 500 руб.</p></div>
+								<div class="item item_6"><p>Замена масла в раздаточной коробке от 600 руб.</p></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="block_4">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-12 col-md-12 col-sm-12">
+						<div id="owl_1" class="owl-carusel">
+							<img src="img/car_1.jpg">
+							<img src="img/car_2.jpg">
+							<img src="img/car_3.jpg">
+							<img src="img/car_4.jpg">
+							<img src="img/car_5.jpg">
+							<img src="img/car_6.jpg">
+							<img src="img/car_7.jpg">
+							<img src="img/car_8.jpg">
+							<img src="img/car_9.jpg">
+							<img src="img/car_10.jpg">
+							<img src="img/car_11.jpg">
+							<img src="img/car_12.jpg">
+							<img src="img/car_13.jpg">
+							<img src="img/car_14.jpg">
+							<img src="img/car_15.jpg">
+							<img src="img/car_16.jpg">
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</section>
+		<section class="block_5" id="diag">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-8 col-sm-12">
+						<p class="title">
+							Диагностика<br />
+Регулировка 
+						</p>
+					</div>
+					<div class="col-xs-12 col-md-4 col-sm-12">
+						<div class="msg" data-toggle="modal" data-target="#call">
+							<i class="icon icon_1"></i><p class="anim-el">Оставьте заявку</p><i class="anim-el icon icon_2"></i>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-12 col-sm-12">
+						<div class="holder hid">
+							<div class="clearfix">
+								<div class="item item_1 anim-el"><p>Диагностика двигателя на наличие ошибок - 850 руб.</p></div>
+								<div class="item item_2 anim-el"><p>Диагностика подвески и рулевого управления -  500 руб.</p></div>
+								<div class="item item_3 anim-el"><p>Регулировка подшипников ступицы -  300 руб.</p></div>
+								<div class="item item_4 anim-el"><p>Диагностика тормозной системы -  400 руб.</p></div>
+								<div class="item item_5 anim-el"><p>Диагностика ходовой части  -  600 руб.</p></div>
+								<div class="item item_6 anim-el"><p>Замер компрессии двигателя -  400 руб.</p></div>
+							</div>
+						</div>
+						<div class="holder vis">
+							<div class="clearfix">
+								<div class="item item_1"><p>Диагностика сканером на наличие ошибок -  850 руб.</p></div>
+								<div class="item item_2"><p>Диагностика подвески и рулевого управления -  500 руб.</p></div>
+								<div class="item item_3"><p>Регулировка подшипников ступицы -  300 руб.</p></div>
+								<div class="item item_4"><p>Диагностика тормозной системы -  400 руб.</p></div>
+								<div class="item item_5"><p>Диагностика ходовой части  -  600 руб.</p></div>
+								<div class="item item_6"><p>Замер компрессии двигателя -  400 руб.</p></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="block_6 bg_1">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-0 col-md-1 col-sm-1 col-lg-1"></div>
+						<div class="col-xs-12 col-md-11 col-lg-10 col-sm-11">
+							<div class="holder clearfix">
+								<p class="pull-left num">1</p>
+								<p class="pull-left desc">Выявление «болезней» вашей машины еще на начальной стадии, 
+	позволяющее избежать дорогостоящего более позднего «лечения».</p>
+							</div>
+						</div>
+					<div class="col-xs-0 col-md-0 col-lg-1 col-sm-0"></div>
+				</div>
+			</div>
+		</section>
+		<section class="block_6 bg_2">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-0 col-md-1 col-lg-1 col-sm-1"></div>
+						<div class="col-xs-12 col-md-11 col-lg-10 col-sm-11">
+							<div class="holder clearfix">
+								<p class="pull-left num">2</p>
+								<p class="pull-left desc">Информируем вас о реальных неисправностях, а не придумываем целый «список» проблем.</p>
+							</div>
+						</div>
+					<div class="col-xs-0 col-md-0 col-lg-1 col-sm-0"></div>
+				</div>
+			</div>
+		</section>
+		<section class="block_6 bg_3">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-0 col-md-1 col-lg-1 col-sm-1"></div>
+						<div class="col-xs-12 col-md-11 col-lg-10 col-sm-11">
+							<div class="holder clearfix">
+								<p class="pull-left num">3</p>
+								<p class="pull-left desc">Устраняем действительно существующие проблемы, а не меняем все узлы подряд, «раздувая» счет/заказ-наряд.</p>
+							</div>
+						</div>
+					<div class="col-xs-0 col-md-0 col-lg-1 col-sm-0"></div>
+				</div>
+			</div>
+		</section>
+		<section class="block_6 bg_4">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-0 col-md-0 col-lg-1 col-sm-1"></div>
+						<div class="col-xs-12 col-md-11 col-lg-10 col-sm-11">
+							<div class="holder clearfix">
+								<p class="pull-left num">4</p>
+								<p class="pull-left desc">Официальная диагностическая карта техосмотра за 20 минут, аккредитованный РСА оператор ТО.</p>
+							</div>
+						</div>
+					<div class="col-xs-0 col-md-0 col-lg-1 col-sm-0"></div>
+				</div>
+			</div>
+		</section>
+				
+		
+		<section class="block_7">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-12 col-sm-12">
+						<p class="title">СТО <span>РФ</span>-моторс</p>
+					</div>
+				</div>
+				<div class="row">
+				<div class="col-xs-0 col-md-5 col-sm-5">
+					
+				</div>
+					<div class="col-xs-12 col-md-2 col-sm-2">
+						<i class="icon rotate"></i>
+					</div>
+				<div class="col-xs-0 col-md-5 col-sm-5">
+					
+				</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-md-4 col-sm-12">
+						<div class="btns"> 
+							<p>Осмотр в день обращения </p><i class="icon anim-el anim-el_1 icon_1"></i>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-4 col-sm-12">
+						<div class="btns"> 
+							<p>Сертифицированный сканер </p><i class="icon anim-el anim-el_2 icon_1"></i>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-4 col-sm-12">
+						<div class="btns"> 
+							<p>Зона ожидания с бесплатным Wi-Fi</p><i class="icon anim-el anim-el_3 icon_1"></i>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-md-4 col-sm-12">
+						<div class="btns resp"> 
+							<i class="icon anim-el anim-el_6 icon_2"></i><p>КОМПЛЕКСНОЕ ОБСЛУЖИВАНИЕ</p>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-4 col-sm-12">
+						<div class="btns resp"> 
+							<i class="icon anim-el anim-el_5 icon_2"></i><p>Удобное расположение</p>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-4 col-sm-12">
+						<div class="btns resp"> 
+							<i class="icon anim-el anim-el_4 icon_2"></i><p>Работа по договору</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-md-4 col-sm-12">
+						<div class="btns"> 
+							<p>Различные формы оплаты</p><i class="icon anim-el anim-el_7 icon_1"></i>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-4 col-sm-12">
+						<div class="btns"> 
+							<p>Подбор автозапчастей с гарантией</p><i class="icon anim-el anim-el_8 icon_1"></i>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-4 col-sm-12">
+						<div class="btns"> 
+							<p>Бесплатная консультация</p><i class="icon anim-el anim-el_9 icon_1"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="block_8" id="dvs">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-8 col-sm-12">
+						<p class="title">
+							Двигатель<br />
+КПП
+						</p>
+					</div>
+					<div class="col-xs-12 col-md-4 col-sm-12">
+						<div class="msg" data-toggle="modal" data-target="#call">
+							<i class="icon icon_1"></i><p class="anim-el">Оставьте заявку</p><i class="icon anim-el icon_2"></i>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-12 col-sm-12">
+						<div class="holder hid">
+							<div class="clearfix">
+								<div class="item item_1 anim-el"><p>Замена клапаннов</p></div>
+								<div class="item item_2 anim-el"><p>Замена сальника коленвала</p></div>
+								<div class="item item_3 anim-el"><p>Капитальный ремонт двигателя</p></div>
+								<div class="item item_4 anim-el"><p>Диагностика МКПП и АКПП</p></div>
+								<div class="item item_5 anim-el"><p>Регулеровка МКПП и АКПП</p></div>
+								<div class="item item_6 anim-el"><p>Ремонт МКПП и АКПП</p></div>
+							</div>
+						</div>
+						<div class="holder vis">
+							<div class="clearfix">
+								<div class="item item_1"><p>Замена клапаннов</p></div>
+								<div class="item item_2"><p>Замена сальника коленвала</p></div>
+								<div class="item item_3"><p>Диагностика КПП</p></div>
+								<div class="item item_4"><p>Капитальный ремонт двигателя</p></div>
+								<div class="item item_5"><p>Замена масла КПП</p></div>
+								<div class="item item_6"><p>Регулеровка КПП</p></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div id="owl_4" class="owl-carusel">
+						<div class="col-xs-12 col-md-12 col-sm-12">
+							<p class="what"></p>
+							<img src="img/serf_1.jpg" class="sertif">
+						</div>
+						<div class="col-xs-12 col-md-12 col-sm-12">
+							<p class="what"></p>
+							<img src="img/serf_1.jpg" class="sertif">
+						</div>
+						<div class="col-xs-12 col-md-12 col-sm-12">
+							<p class="what"></p>
+							<img src="img/serf_1.jpg" class="sertif">
+						</div>
+						<div class="col-xs-12 col-md-12 col-sm-12">
+							<p class="what"></p>
+							<img src="img/serf_1.jpg" class="sertif">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="block_4 shadow">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-12 col-md-12 col-sm-12">
+						<div id="owl_2" class="owl-carusel">
+							<img src="img/car_1.jpg">
+							<img src="img/car_2.jpg">
+							<img src="img/car_3.jpg">
+							<img src="img/car_4.jpg">
+							<img src="img/car_5.jpg">
+							<img src="img/car_6.jpg">
+							<img src="img/car_7.jpg">
+							<img src="img/car_8.jpg">
+							<img src="img/car_9.jpg">
+							<img src="img/car_10.jpg">
+							<img src="img/car_11.jpg">
+							<img src="img/car_12.jpg">
+							<img src="img/car_13.jpg">
+							<img src="img/car_14.jpg">
+							<img src="img/car_15.jpg">
+							<img src="img/car_16.jpg">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="block_9" id="hod">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-4 col-sm-12 hid">
+						<div class="msg" data-toggle="modal" data-target="#call">
+							<i class="icon icon_1"></i><p class="anim-el">Оставьте заявку</p><i class="icon anim-el icon_2"></i>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-8 col-sm-12">
+						<p class="title">
+							Ходовая часть и<br />
+Электрика
+						</p>
+					</div>
+					<div class="col-xs-12 col-md-4 col-sm-12 vis">
+						<div class="msg" data-toggle="modal" data-target="#call">
+							<i class="icon icon_1"></i><p class="anim-el">Оставьте заявку</p><i class="icon anim-el icon_2"></i>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-12 col-sm-12">
+						<div class="holder hid">
+							<div class="clearfix">
+								<div class="item item_1 anim-el"><p>Замена наконечника от 300</p></div>
+								<div class="item item_2 anim-el"><p>Подшипник перед. ступицы от 800</p></div>
+								<div class="item item_3 anim-el"><p>Ремонт генератора от 500</p></div>
+								<div class="item item_4 anim-el"><p>Амортизатор передний от 700</p></div>
+								<div class="item item_5 anim-el"><p>Ремонт стартера от 500</p></div>
+								<div class="item item_6 anim-el"><p>Печки от 500</p></div>
+							</div>
+						</div>
+						<div class="holder vis">
+							<div class="clearfix">
+								<div class="item item_1"><p>Замена наконечника от 300</p></div>
+								<div class="item item_2"><p>Подшипник перед. ступицы от 800</p></div>
+								<div class="item item_3"><p>Ремонт генератора от 500</p></div>
+								<div class="item item_4"><p>Амортизатор передний от 700</p></div>
+								<div class="item item_5"><p>Ремонт стартера от 500</p></div>
+								<div class="item item_6"><p>Ремонт печки  от 500</p></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="block_10">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-12 col-sm-12">
+						<p class="title">Отзывы клиентов</p>
+					</div>
+				</div>
+				<div class="row">
+					<div id="owl_5" class="owl-carusel">
+					<div class="col-xs-12 col-md-12 col-sm-12">
+						<div class="item">
+							<img src="img/who_1.png">
+							<p class="name">Федор Куприянов</p>
+							<p class="who">не работает</p>
+							<p class="about">Сын записал меня на диагностику моей  старенькой бмв-ушечки. Даже не думал, что все можно сделать так быстро и найти неисправность практически сразу. Мне даже подобрали «родную» деталь для замены, а ведь моей машине лет уже немало! Я думал, что это просто невозможно...</p>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-12 col-sm-12">
+						<div class="item">
+							<img src="img/who_1.png">
+							<p class="name">Александ Николаевич</p>
+							<p class="who">Госслужащий</p>
+							<p class="about">Действительно клиентоориентированный сервис, что сейчас встречается редко. В моем случае был важен срок, и мне предложили различные решения, позволившие успешно решить задачу. Также предварительная оценка диапазона стоимости работ была точной. </p>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-12 col-sm-12">
+						<div class="item">
+							<img src="img/who_1.png">
+							<p class="name">Анна Евгеньевна</p>
+							<p class="who">PR-менеджер</p>
+							<p class="about">Самое приятное впечатление произвели внимательность и вежливость менеджеров и по-европейски опрятный вид механиков. Похоже, что в Москве появилось по-настоящему цивилизованное место, где можно выпить кофе и проверить электронную почту, пока профессионалы занимаются твоим автомобилем. Кстати, кофе в РФ-Моторс очень приличный, в отличие от большинства их конкурентов...</p>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-12 col-sm-12">
+						<div class="item">
+							<img src="img/who_1.png">
+							<p class="name">Андрей Шестаков</p>
+							<p class="who">сотрудник банка</p>
+							<p class="about">Честно говоря, записываясь на ремонт ходовой части, приготовился к долгому ожиданию. А оказалось, что ни ждать, ни перезванивать никуда не надо - менеджер звонит сам и приглашает в техцентр!</p>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="block_11">
+			<div id="owl" class="owl-carusel">
+				<img src="img/slide_1.jpg" />
+				<img src="img/slide_1.jpg" />
+				<img src="img/slide_1.jpg" />
+				<img src="img/slide_1.jpg" />
+				<img src="img/slide_1.jpg" />
+				<img src="img/slide_1.jpg" />
+				
+			</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-md-12 col-sm-12">
+							<div class="photo">
+								<p class="hid">Наши<br /><span>фото</span></p>
+								<p class="vis">фото</p>
+								<div class="triangle"></div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			
+		</section>
+		<section class="block_12">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-12 col-sm-12">
+						<p class="title">Сотрудники цеха технического обслуживания(ТО) и текущего ремонта(ТР)</p>
+					</div>
+				</div>
+				<div class="row">
+					<div id="owl_6" class="owl-carusel">
+					<div class="col-xs-12 col-md-12 col-sm-12">
+						<div class="item">
+							<img src="img/who_1.png">
+							<p class="name">Коломиец Сергей</p>
+							<p class="who">Директор сервиса</p>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-12 col-sm-12">
+						<div class="item">
+							<img src="img/who_1.png">
+							<p class="name">Суховой Сергей Дмитриевич</p>
+							<p class="who">Старший мастер-приемщик слесарного цеха</p>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-12 col-sm-12">
+						<div class="item">
+							<img src="img/who_1.png">
+							<p class="name">Пречищенко Илья</p>
+							<p class="who">Мастер-приемщик кузовного цеха</p>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-12 col-sm-12">
+						<div class="item">
+							<img src="img/who_1.png">
+							<p class="name">Кренов Владимер</p>
+							<p class="who">Менеджер по продаже запасных частей</p>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="block_13">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-12 col-sm-12">
+					<div class="holder_1 resp">
+						<i class="icon icon_2"></i>
+						<p>Все время, пока мы работаем, вы можете пить кофе, чай, прохладительные напитки 
+и пользоваться бесплатным доступом к беспроводной сети интернет!</p>
+					</div>
+					<div class="clearfix">
+						<div class="icon after"></div>
+						<div class="holder" data-toggle="modal" data-target="#call">
+							<p class="anim-el">Оставьте заявку</p>
+							<i class="icon anim-el icon_1"></i>
+						</div>
+						<div class="holder_1">
+							<i class="icon icon_2"></i>
+							<p>Все время, пока мы работаем, вы можете пить кофе, чай, прохладительные напитки 
+и пользоваться бесплатным доступом к беспроводной сети интернет!</p>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="block_14">
+			<div class="map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d8980.919621576893!2d37.61955417336756!3d55.75450832384737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sgoogle+maps!5e0!3m2!1sru!2sua!4v1407980911486" width="100%" height="450" frameborder="0" style="border:0"></iframe>
+			</div>
+		</section>
+		
+		<section class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+					</div>
+				</div>
+			</div>
+		</section>
+		
+	</body>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/owl.carousel.css" rel="stylesheet">
+		<link href="css/owl.theme.css" rel="stylesheet">
+		<script src="js/jquery.inview.min.js"></script>
+		<script src="js/init.js"></script>
+		<script src="js/jquery.maskedinput.js"></script>
+		<script src="js/owl.carousel.js"></script>
+		<script src="js/jquery.parallax-1.1.3.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		
+
+
+<div class="modal fade" id="call" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title">Мы вам<br />
+перезвоним!</h4>
+      </div>
+      <div class="modal-body">
+      <form class="form_modal" action="hendler.php">
+        <input class="nameI" type="text" name="user" placeholder="Ваше имя_" required />
+		<input class="phoneI" type="text" name="phone" placeholder="Ваш телефон_" required />
+		<p class="attantion">* Гарантируем конфиденциальность Ваших персональных данных!</p>
+		<button type="submit" class="selfBtn">Отправить</button>
+	  </form>
+      </div>
+     
+    </div>
+  </div>
+</div>
+</html>
